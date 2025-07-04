@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premier Power Solutions</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #1f1f1f;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    header p {
+      font-size: 1.3em;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #3b4c3f;
+      border-left: 5px solid #facc15;
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔️";
+      margin-right: 8px;
+      color: #facc15;
+    }
+
+    .carousel-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 10px;
+    }
+
+    .carousel-item {
+      flex: 0 0 auto;
+      width: 300px;
+      scroll-snap-align: center;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .carousel-item p {
+      margin: 0;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .cta {
+      background-color: #facc15;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .cta a {
+      background-color: #3b4c3f;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #2f3b32;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #3b4c3f;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Premier Power Solutions</h1>
+  <p>Instalación de appliances de cocina y soluciones eléctricas profesionales en Florida</p>
+</header>
+
+<div class="content">
+  <div class="section">
+    <h2>Información de Contacto</h2>
+    <p><strong>Ubicación:</strong> Miami, FL</p>
+    <p><strong>Teléfono:</strong> +1 561-877-0772</p>
+    <p><strong>Correo:</strong> info@premierpwr.com</p>
+  </div>
+
+  <div class="section">
+    <h2>Servicios Principales</h2>
+    <ul>
+      <li>Instalación de todo tipo de appliances de cocina</li>
+      <li>Cargadores para carros eléctricos</li>
+      <li>Generadores</li>
+      <li>Electricidad residencial general</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Galería de Servicios</h2>
+    <div class="carousel-container">
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1593890944401-b40d1bb64c4b?auto=format&fit=crop&w=800&q=80" alt="Appliances de cocina" />
+        <p>Instalación profesional de electrodomésticos</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1603791440340-71820fadc9c8?auto=format&fit=crop&w=800&q=80" alt="EV charger" />
+        <p>Cargadores de carros eléctricos en hogares</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1618832515491-d1bcf7037de2?auto=format&fit=crop&w=800&q=80" alt="Generadores" />
+        <p>Instalación y conexión de generadores</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1592928302255-1b1b75d05e17?auto=format&fit=crop&w=800&q=80" alt="Electricidad general" />
+        <p>Electricidad residencial bajo código NEC</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section cta">
+    <p>Somos una empresa licenciada y comprometida con la seguridad, eficiencia y cumplimiento del código eléctrico.</p>
+    <a href="mailto:info@premierpwr.com">Solicitar Cotización</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Premier Power Solutions. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
